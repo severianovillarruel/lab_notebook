@@ -266,3 +266,7 @@ talapas Run
     - sort the bam file that was just made
     - index the file that was just sorted
     - view chromosome 1 of the file that was just sorted and put the chromosome 1 data into the file chr1.SAM
+
+
+7. Number of mapped reads: 21770707
+	 Number of un-mapped reads: 1726456
