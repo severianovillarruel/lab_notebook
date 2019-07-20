@@ -1,3 +1,9 @@
+
+
+
+*make sure scripts are running in the correct environments! Hard code it in the script is best practice.*
+*trying to use more variables in bash scripts. variables seems to be associated with bugs*
+
 #########################################################Running Velvet: Problem Set 6
 
 
