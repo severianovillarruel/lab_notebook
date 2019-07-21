@@ -77,6 +77,8 @@ Exit status: 0
 	Exit status: 0
 	*forgot to save standard error on 20x, 60x, auto, auto_min500nt*
 
+
+*reran VELVETG on 7/20/19*
 /home/svillarr/svillarr/PS/ps6
 4. Ran on kmers 31, 41, 49 VELVETG using **velvetg.srun**
 	 Will run on kmer 49: 20x, 60x, auto, auto_min500nt
@@ -222,6 +224,20 @@ Exit status: 0
 	The average contig length is: 2362.9890710382515 basepairs
 	The mean coverage depth is: 392.8630475874315
 	The N50 if this genome assembly is: 6819
+
+#7/18/19
+
+1. I reran all of my VELVETG commands. Removing the insert length parameter and setting the minimum contig length to 200. Updating my VELVETG command.
+*VELVETG does not have a default minimum contig length*
+
+```
+Old example:
+/usr/bin/time -v velvetg /projects/bgmp/svillarr/PS/ps6/output_dir31/ -exp_cov 61.358475 -ins_length 77.7910499377
+```
+```
+New example:
+/usr/bin/time -v velvetg /projects/bgmp/svillarr/PS/ps6/velvet31/ -min_contig_lgth 200 -exp_cov 61.358475
+```
 
 ####################################################Reciprocal Best Hit (RBH) pipeline: Problem Set 7:
 
