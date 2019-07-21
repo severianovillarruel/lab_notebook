@@ -269,11 +269,16 @@ Head to Ensembl.org -> Downloads -> Download data via FTP. Download Homo_sapiens
 1. Made the **database.srun** script to create a BLAST database for human & zebrafish and zebrafish & human longest protein FASTA file
 *no standard error :( but ran relatively quickly. around 10 minutes*
 *made some .phr, .pin, .psq*
+```
+wc -l 1962366 query_homo_target_zebrafish.txt
 
+wc -l 2556623 query_zebrafish_target_homo.txt
+```
 2. Made the script **palign.srun** to find alignments of the zebrafish proteins to the human proteins & the human proteins to the zebrafish proteins (should take ~ 7 hours to run)
 
  - output the alignment hits to **query_zebrafish_target_homo.txt** & **query_homo_target_zebrafish.txt**
  - email unpdate from talapas: slurm Job_id=9615412 Name=protein_align Ended, Run time 10:01:59, COMPLETED, ExitCode 0
+
 
 #7/18/19 - 7/19/19
 
@@ -281,7 +286,7 @@ Head to Ensembl.org -> Downloads -> Download data via FTP. Download Homo_sapiens
 /home/svillarr/svillarr/PS/ps7
 1. Wrote the script **RBH.py** to reference **query_homo_target_zebrafish.txt**  & **query_zebrafish_target_homo.txt** then used the **human_reference_table.tsv** & **zebrafish_reference_table.tsv** to print out the *Human Gene ID, Human Protein ID, Human Gene Name, Zebrafish Gene ID, Zebrafish Protein ID, Zebrafish Gene Name* associated with the reciprocal best hit.
 
-2. Saved the RBH to the file **RHB.txt** wc -l = 7913
+2. Saved the RBH to the file **RHB.txt** ```wc -l = 7913```
 	- other people got the same :)
 
 	local run
