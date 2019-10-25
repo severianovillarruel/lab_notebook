@@ -1,1 +1,1 @@
-# lab_notebook
+# B624 Bioinformatics Programming lab notebook
